@@ -5,8 +5,10 @@ The module mdf_decompose allows you to take the list of metallicities and model 
 The main method is mdf_decompose.doit() (see detailed documentation there)
 
 
-The shortest example of use:
+The code depends on numpy, scipy and dynesty modules
 
+The shortest example of use:
+```
 import mdf_decompose as M
 
 rstate = np.random.default_rng(1)
@@ -25,5 +27,7 @@ fehs = rstate.normal(size=N) * fehsig + fehmean
 ret = M.doit(fehs,
                   curmv,
                   mass_met_info=MMI)
-# print the grid 
+# print the grid of log luminosities and
+# the median number of galaxies contributing to that bin
 print (ret['logl_grid'], ret['n50'])
+```
