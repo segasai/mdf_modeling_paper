@@ -1,5 +1,5 @@
 This repo has the code implementing an MDF modeling algorithm presented
-in the paper by Deason, Koposov et al.(2023).
+in the paper by [Deason, Koposov et al.(2023)](https://ui.adsabs.harvard.edu/abs/2023MNRAS.520.6091D/abstract)
 
 The module mdf_decompose allows you to take the list of metallicities and model that as a combination of MDFs of galaxies of different luminosities.
 
